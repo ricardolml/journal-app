@@ -1,9 +1,9 @@
 
 export const fileUpload = async ( file ) => {
-    const cloudUrl = ''; //your url
+    const cloudUrl = 'https://api.cloudinary.com/v1_1/ricardolml/upload'; //your url
 
     const formData = new FormData();
-    formData.append('',''); //your data
+    formData.append('upload_preset','react-journal'); //your data
     formData.append('file',file);
 
     try{
